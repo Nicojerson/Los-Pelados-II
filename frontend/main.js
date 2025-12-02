@@ -134,8 +134,3 @@ getEvent("productos", (productos) => {
   actualizarCantGustos();
 });
 
-function mostrarSabores(data) {
-  console.log("Sabores recibidos:", data); // Es la funcion que va en el getevent que hace que cuando le llega la info del backend, la muestra en el front
-}
-
-saboresContainer.addEventListener(getEvent("SABORES", mostrarSabores), "click") //Que mande el getevent cuando haya un click en el objeto
